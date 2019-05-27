@@ -4,7 +4,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  base: '/jaffamod/v3',
+  base: '/jaffamod/v3/',
   themeConfig: {
     lastUpdated: 'Last updated',
     logo: 'https://jaffamod.apps.yogscast.com/logo.png',
