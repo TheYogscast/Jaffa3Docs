@@ -16,6 +16,7 @@ class JaffaMod extends EventEmitter {
 - `RedisCache` `cache` Cache client.
 - `Mongoose` `db` DB client.
 - `Store` `store` Versatile storage.
+  - JaffMod supports hot-reloading which is the act of reloading the code while it's running. The store is basically just an Object which stays the same in between reloads so you can leverage that to store information.
 
 ## Methods
 
