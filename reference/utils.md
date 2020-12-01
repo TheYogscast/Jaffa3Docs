@@ -7,8 +7,9 @@
 getEmote(emote, discord)
 ```
 
-Returns a given emote name formatted for the correct platform. For Discord, the emote name needs to
-be formatted as `:emote:`, whereas on Twitch it is just `emote`.
+Returns a given emote name formatted for the correct platform. For Discord, the bot does not have
+access to emotes and so this will always return an empty string (if the bot did have access, the
+desired format would be `:emote:`). For Twitch, this just returns `emote` directly.
 
 **Returns: `String`** The given emote formatted for the correct platform.
 
@@ -49,10 +50,10 @@ ____
 isJingleJam(d = undefined)
 ```
 
-Returns if a given date (or the current date) is during JingleJam -- will be true for the month of
-December.
+Returns if a given date (or the current date) is during Jingle Jam -- will be true for the first 14
+days of December.
 
-**Returns: `Boolean`** True if JingleJam time.
+**Returns: `Boolean`** True if Jingle Jam time.
 
 - `Date` `d` Optional, date to use for check. Defaults to now.
 ____
@@ -62,9 +63,9 @@ ____
 isJingleJamExt(d = undefined)
 ```
 
-Returns if a given date (or the current date) is during JingleJam or just after -- will be true for
+Returns if a given date (or the current date) is during Jingle Jam or just after -- will be true for
 the month of December and the first week of January.
 
-**Returns: `Boolean`** True if JingleJam time.
+**Returns: `Boolean`** True if Jingle Jam time.
 
 - `Date` `d` Optional, date to use for check. Defaults to now.
